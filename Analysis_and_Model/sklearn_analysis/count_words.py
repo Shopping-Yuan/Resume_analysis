@@ -1,7 +1,7 @@
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 #import torch
-from mysql_operation import *
+from Data_preparing.mysql_operation import *
 import copy
 df =get_resume_data.get_data(csv_datatype.table_name,copy.deepcopy(settings.DATABASES['default']))
 print(df.shape,df.columns)
