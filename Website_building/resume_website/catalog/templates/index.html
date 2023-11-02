@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block title %}
+      <title>Test</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% block contend %}
+    <head2>Test_Index</head2>
+    <style>
+      table, th ,td {
+        border: solid;
+        border-collapse: collapse;
+      }
+    </style>
+    <table>
+      <thead>
+          <tr>
+              <th colspan="3">All Cards</th>
+          </tr>
+          <tr>
+            <th>Card ID</th>
+            <th>Card Name</th>
+            <th>Card Type</th>
+          </tr>
+      </thead>
+      <tbody>
+            {% for i in content %}
+            <tr>
+              <td>{{i.card_ID}}</td> 
+              <td>{{i.card_name}}</td>
+              <td>{{i.card_type}}</td>
+            </tr>
+            {% endfor %}  
+      </tbody>
+    </table>
+    {% endblock %}
+  </body>
+</html>
