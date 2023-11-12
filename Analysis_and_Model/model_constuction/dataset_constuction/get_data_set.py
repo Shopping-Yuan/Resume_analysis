@@ -18,7 +18,7 @@
 from torch.utils.data import DataLoader
 from dataset_preparing import food_f
 from data_info import data_info
-from Analysis_and_Model.model.hyper_parameters import h_paras
+from Analysis_and_Model.model_constuction.hyper_parameters import h_paras
 # Construct data loaders.
 train_loader = DataLoader(food_f("train_origin",data_info), batch_size=h_paras["batch_size"], shuffle=True, num_workers=0, pin_memory=True)
 valid_loader = DataLoader(food_f("val",data_info), batch_size=h_paras["batch_size"], shuffle=True, num_workers=0, pin_memory=True)
