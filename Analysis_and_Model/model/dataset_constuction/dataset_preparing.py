@@ -1,3 +1,5 @@
+import torch
+from data_info import data_info
 from torchvision.transforms import v2
 from torchvision.datasets import DatasetFolder
 from PIL import Image
