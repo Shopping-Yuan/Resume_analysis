@@ -1,6 +1,6 @@
 h_paras = {
     # maximum number of epochs
-    'n_epochs': 100,
+    'n_epochs': 20,
     # mini-batch size for dataloader
     'batch_size': 128,
     # optimization algorithm (optimizer in torch.optim)
@@ -14,4 +14,5 @@ h_paras = {
     # your model will be saved here
     'save_path': './model.pth',
     'early_stop': 10,
+    'threshold': 0.8,
 }

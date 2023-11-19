@@ -3,11 +3,11 @@ from torch import nn
 from torch.utils.data import DataLoader
 from torch.utils.data import ConcatDataset , Subset
 from tqdm.auto import tqdm
-from model_construction.pytorch_setting import device
-from model_construction.dataset_constuction import food_f,food_semi_f, Label_Changable_dsf
-from model_construction.dataset_constuction.data_info import data_info
+from Analysis_and_Model.model_construction.pytorch_setting import device
+from Analysis_and_Model.model_construction.dataset_constuction.dataset_preparing import food_f,food_semi_f, Label_Changable_dsf
+from Analysis_and_Model.model_construction.dataset_constuction.data_info import data_info
 
-def get_pseudo_labels(model, training_loader ,h_paras , epoch):
+def get_pseudo_labels(model, training_loader ,h_paras):
 
     softmax = nn.Softmax(dim=-1)
     model.eval()

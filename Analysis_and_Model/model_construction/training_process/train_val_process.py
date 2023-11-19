@@ -50,7 +50,7 @@ def train_val_process(training_loader, validation_loader, data_info, model, h_pa
         # ---------- Do semi-supervised learning ----------
         if ((do_semi == True) & (early_stop_cnt >= 1 )):
 
-          training_loader = get_pseudo_labels(model_d, training_loader , h_paras ,epoch)
+          training_loader = get_pseudo_labels(model_d, training_loader , h_paras)
 
 
         # ---------- Validation ----------

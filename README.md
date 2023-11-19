@@ -49,3 +49,18 @@ Dataflow.docx 呈現專案的資料流程圖
 environment.yaml 是目前conda環境中安裝的package，但尚未經過完整測試，目前有許多功能尚無法運行，
 未來預計利用docker進行整合。
 README.md 本檔案，將會隨日期更新
+
+設置:
+當使用vscode時，
+確保下列指令已加入setting.json檔案
+    "terminal.integrated.env.windows": {"PYTHONPATH": "${workspaceFolder}",},
+    "terminal.integrated.env.linux": {"PYTHONPATH": "${workspaceFolder}",},
+    "terminal.integrated.env.osx": {"PYTHONPATH": "${workspaceFolder}",}
+
+使用:
+按照dataset_construction/get_data_set提供的來源下載資料集
+並執行:
+training_process/get_model
+
+若要了解模型的準確度，則執行:
+training_process/plot_outcome

@@ -1,4 +1,5 @@
 from torch import nn
+from Analysis_and_Model.model_construction.dataset_constuction.data_info import data_info
 class Classifier(nn.Module):
     def __init__(self):
         super(Classifier, self).__init__()
