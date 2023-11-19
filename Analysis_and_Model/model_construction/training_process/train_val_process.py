@@ -6,7 +6,7 @@ from train import train
 from val import val
 from semi_supervised_learning import get_pseudo_labels
 
-def train_val_process(training_loader, validation_loader, data_info, model, h_paras, device , do_semi = False):
+def train_val_process(training_loader, validation_loader, model, h_paras, device , do_semi = False):
     # Initialize a model, and put it on the device specified.
     model_d = model.to(device)
     model_d.device = device

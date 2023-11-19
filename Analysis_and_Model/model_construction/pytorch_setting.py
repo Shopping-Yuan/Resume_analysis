@@ -5,7 +5,12 @@ import torch
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 def get_device():
-    return 'cuda' if torch.cuda.is_available() else 'cpu'
+    if torch.cuda.is_available():
+        return 'cuda' 
+    elif torch.backends.mps.is_available():
+        return "mps"
+    else :
+        return 'cpu'
 device = get_device()
  
 if __name__ == "__main__":

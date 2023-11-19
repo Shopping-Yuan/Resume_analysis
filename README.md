@@ -8,7 +8,7 @@ Data_preparing 資料夾將包含資料處理和儲存的功能
 Analysis_and_Model將包含模型和訓練、儲存模型的功能
 Website_building 資料夾將包含呈現網頁的所有功能
 
-本次更新的功能集中在Analysis_and_Model的model資料夾中
+本次更新的功能集中在Analysis_and_Model的model_construction資料夾中
 1.pytorch_setting中，設定訓練模型時的各種隨機變數，以及裝置(cpu、gpu，未來可能新增mac的imp )
 
 2.data_info 設定了訓練用、驗證用資料集的路徑以及處理資料集的函數(函數並非實作在這裡)。
@@ -58,9 +58,7 @@ README.md 本檔案，將會隨日期更新
     "terminal.integrated.env.osx": {"PYTHONPATH": "${workspaceFolder}",}
 
 使用:
-按照dataset_construction/get_data_set提供的來源下載資料集
-並執行:
-training_process/get_model
+如果設備許可，建議將model_construction/data_info/data_info["size"]增加為(128,128)
 
-若要了解模型的準確度，則執行:
-training_process/plot_outcome
+1.按照dataset_construction/get_data_set提供的來源下載資料集
+2.執行:training_process/plot_outcome
