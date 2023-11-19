@@ -10,10 +10,3 @@ device = get_device()
  
 if __name__ == "__main__":
     print(torch.cuda.is_available())
-#set random variable
-import numpy as np
-myseed = 1
-np.random.seed(myseed)
-torch.manual_seed(myseed)
-if torch.cuda.is_available():
-    torch.cuda.manual_seed_all(myseed)

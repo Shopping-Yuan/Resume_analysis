@@ -8,7 +8,7 @@
 # !sudo apt install megatools
 # !megadl "https://mega.nz/#!zt1TTIhK!ZuMbg5ZjGWzWX1I6nEUbfjMZgCmAgeqJlwDkqdIryfg"
 
-# step 2 : Unzip the dataset.
+# step 2 : Unzip the dataset in this folder.
 # This may take some time.
 
 from torch.utils.data import DataLoader
