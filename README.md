@@ -46,5 +46,3 @@ Dataflow.docx 呈現專案的資料流程圖
 environment.yml 是目前conda環境中安裝的package，但尚未經過完整測試，目前有許多功能尚無法運行，
 未來預計利用docker進行整合。
 README.md 本檔案，將會隨日期更新
-
-
